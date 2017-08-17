@@ -1,10 +1,17 @@
-# ios-swift-uicollectionviewcell-from-xib
 
 ### 1. Add UICollectionView into your view
+
+- Set datasource and delegate for your collectionView 
+<img src="http://i.imgur.com/Dzd48hD.png" width="150px">
+
 ### 2. Create your collectionview cell: MyCollectionViewCell.swift & MyCollectionViewCell.xib
+- Set Identifier value 
+<img src="http://i.imgur.com/qLWXu2z.png" width="150px">
+
+
 ### 3. Let start to add some code
 
->##### 1. Create Identifer for your cell
+>##### 1. Create Identifier for your cell
 ```swift
 let MyCollectionViewCellId: String = "MyCollectionViewCell"
 ```
@@ -28,7 +35,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize.init(width: UIScreen.main.bounds.width, height: 100)
+        return CGSize.init(width: UIScreen.main.bounds.width - 20, height: 80)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

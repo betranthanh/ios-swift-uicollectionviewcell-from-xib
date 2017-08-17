@@ -2,11 +2,11 @@
 ### 1. Add UICollectionView into your view
 
 - Set datasource and delegate for your collectionView 
-<img src="http://i.imgur.com/Dzd48hD.png" width="150px">
+<img src="http://i.imgur.com/Dzd48hD.png" width="250px">
 
 ### 2. Create your collectionview cell: MyCollectionViewCell.swift & MyCollectionViewCell.xib
 - Set Identifier value 
-<img src="http://i.imgur.com/qLWXu2z.png" width="150px">
+<img src="http://i.imgur.com/qLWXu2z.png" width="180px">
 
 
 ### 3. Let start to add some code
@@ -30,6 +30,13 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets {
+        let inset = 10
+        return UIEdgeInsetsMake(CGFloat(inset), CGFloat(inset), CGFloat(inset), CGFloat(inset))
     }
     
     func collectionView(_ collectionView: UICollectionView,

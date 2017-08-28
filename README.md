@@ -1,4 +1,4 @@
-[![Watch the video](http://i.imgur.com/Wn5L5B1.png)](https://goo.gl/UxHujn)
+[![Watch the video](http://i.imgur.com/Wn5L5B1.png)](https://goo.gl/4m8u3f)
 
 ### 1. Add UICollectionView into your view
 
